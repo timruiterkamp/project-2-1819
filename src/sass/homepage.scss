@@ -1,0 +1,38 @@
+.introduction {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+
+  .textfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 250px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      letter-spacing: -1px;
+      font-family: "Open Sans";
+      margin: 0;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1.25rem;
+      // line-height: 1.4;
+      margin: 15px 0 0 5px;
+    }
+  }
+}
+
+.inner-wrapper {
+  max-width: 1425px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}

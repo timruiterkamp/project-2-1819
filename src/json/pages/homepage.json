@@ -1,0 +1,93 @@
+{
+  "id": 35,
+  "date": "2019-04-03T15:32:00",
+  "date_gmt": "2019-04-03T15:32:00",
+  "guid": { "rendered": "http://localhost:8888/?page_id=35" },
+  "modified": "2019-04-03T18:57:16",
+  "modified_gmt": "2019-04-03T18:57:16",
+  "slug": "homepage",
+  "status": "publish",
+  "type": "page",
+  "link": "http://localhost:8888/",
+  "title": { "rendered": "Homepage" },
+  "content": { "rendered": "", "protected": false },
+  "excerpt": { "rendered": "", "protected": false },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": [],
+  "acf": {
+    "header": {
+      "image": "http://localhost:8888/wp-content/uploads/2019/04/header-cmd-3.jpg",
+      "title": "CMD Amsterdam",
+      "subtitle": "Opleiding voor digital interactive design."
+    },
+    "design": {
+      "title": "Ontwerpen",
+      "content": "<p>Wij zijn Communication and Multimedia Design (CMD). Wij zijn een HBO-ontwerpopleiding voor digital interactive design. Onze studenten ontwerpen en realiseren digitale interactieve oplossingen die optimaal aansluiten bij de behoeften van de gebruikers.</p>\n<p>In de kern van de opleiding zit interaction design, visual design en techniek (met name frontend development). Onze vakdocenten hebben een goed netwerk en vertalen continu recente ontwikkelingen naar het gehele onderwijsprogramma. Afgestudeerde studenten zijn daarmee van grote waarde in het huidige werkveld. Daar zijn wij trots op!</p>\n",
+      "button_text": "Meer over CMD",
+      "button_link": "https://www.cmd-amsterdam.nl/cmd/",
+      "image": "http://localhost:8888/wp-content/uploads/2019/04/cmd_daantjebons_0007.jpg"
+    },
+    "studentwork": {
+      "title": "Studentenwerk",
+      "content": "<p>Het werk van onze studenten varieert van websites tot webshops, en van fysieke producten met een NFC-chip tot interactieve datavisualisaties. En dan zijn we er vast nog een paar vergeten.</p>\n<p>We hebben een mooie selectie van studentenwerk voor je gemaakt. Hierbij kun je ook kiezen tussen werk uit de vier studiejaren. Laat je verrassen en voel je vrij om er comments bij te plaatsen!</p>\n",
+      "button_text": "Bekijk studentenwerk",
+      "button_link": "https://www.cmd-amsterdam.nl/cmd/",
+      "image": "http://localhost:8888/wp-content/uploads/2019/04/LR-deliverbee1.png"
+    },
+    "working-together": {
+      "title": "Samenwerken",
+      "content": "<p>Onze opleiding hecht grote waarde aan samenwerking. We kijken met interesse naar de ontwikkelingen in ons vakgebied en de samenleving en zoeken daar onderwerpen en partners uit. Daarnaast stellen wij onze kennis en kunde rond digital interactive design graag beschikbaar voor ons netwerk.</p>\n<p>Dit alles doen we via stages, het werken aan projecten, gastcolleges, bedrijfsbezoeken, bijbaantjes, (betaalde) ontwerpklussen voor onze studenten en korte cursussen en masterclasses voor bedrijven.</p>\n",
+      "button_text": "Samenwerken? ja graag!",
+      "button_link": "",
+      "image": "http://localhost:8888/wp-content/uploads/2019/04/cmd_daantjebons_0025-1.jpg"
+    },
+    "masterclasses": {
+      "title": "Cursussen en masterclasses",
+      "content": "<p>Naast het opleiden van studenten delen wij onze kennis en expertise rond digital interactive design ook graag met iedereen die daar interesse in heeft. Vanuit CMD Battery geven onze docenten korte cursussen en masterclasses.</p>\n<p>Uitgangspunt is onze eigen expertise. In een gesprek kunnen wij de cursus aan laten sluiten bij jouw eigen kennisbehoefte. Mocht je op basis van ons opleidingsprogramma interesse hebben in één of meerdere onderwerpen, dan komen we graag bij je langs.</p>\n",
+      "button_text": "Meer over battery",
+      "button_link": "",
+      "image": "http://localhost:8888/wp-content/uploads/2019/04/battery-web.jpg"
+    }
+  },
+  "_links": {
+    "self": [{ "href": "http://localhost:8888/wp-json/wp/v2/pages/35" }],
+    "collection": [{ "href": "http://localhost:8888/wp-json/wp/v2/pages" }],
+    "about": [{ "href": "http://localhost:8888/wp-json/wp/v2/types/page" }],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "http://localhost:8888/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "http://localhost:8888/wp-json/wp/v2/comments?post=35"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 3,
+        "href": "http://localhost:8888/wp-json/wp/v2/pages/35/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 44,
+        "href": "http://localhost:8888/wp-json/wp/v2/pages/35/revisions/44"
+      }
+    ],
+    "wp:attachment": [
+      { "href": "http://localhost:8888/wp-json/wp/v2/media?parent=35" }
+    ],
+    "curies": [
+      { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+    ]
+  }
+}

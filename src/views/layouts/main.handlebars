@@ -1,0 +1,22 @@
+{{> head }}
+
+<body>
+  {{> header}}
+  <main>
+    <section class="content">
+      {{{body}}}
+    </section>
+  </main>
+  {{!-- 
+  <script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/service-worker.js", {
+          scope: "./"
+        })
+    }
+  </script> --}}
+  {{>footer}}
+</body>
+
+</html>
