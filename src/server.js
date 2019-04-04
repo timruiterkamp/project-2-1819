@@ -15,7 +15,7 @@ const options = {
   cert: fs.readFileSync("./server.crt")
 };
 
-spdy.createServer(options, app).listen(process.env.port || 3000, error => {
+spdy.createServer(options, app).listen(process.env.PORT || 3000, error => {
   if (error) {
     console.error(error);
     return process.exit(1);
