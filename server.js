@@ -10,10 +10,10 @@ const spdy = require("spdy");
 // require("dotenv").config();
 const app = express();
 
-const options = {
-  key: fs.readFileSync("./server.key"),
-  cert: fs.readFileSync("./server.crt")
-};
+// const options = {
+//   key: fs.readFileSync("./server.key"),
+//   cert: fs.readFileSync("./server.crt")
+// };
 
 app
   .engine(
@@ -44,10 +44,12 @@ app
   })
   .use(bodyParser.json())
   .get("/offline", getOffline)
-  .get("/", all);
+  .get("/", all)
+  .listen(process.env.PORT || 3000);
 
-const server = spdy.createServer(options, app);
-server.listen(process.env.PORT || 3000);
+//HTTP2 server
+// const server = spdy.createServer(options, app);
+// server.listen(process.env.PORT || 3000);
 
 function getOffline(req, res) {
   res.render("offline");
