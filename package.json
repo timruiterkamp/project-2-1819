@@ -6,18 +6,33 @@
   "author": "Tim <timruiterkamp@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "download-to-file": "^2.1.0",
+    "es6-promisify": "^6.0.1",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image-resize": "^0.13.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-responsive": "^2.13.0",
+    "gulp-uglify": "^3.0.2",
     "json2md": "^1.6.3",
     "node-fetch": "^2.3.0",
     "node-sass": "^4.11.0",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "spdy": "^4.0.0",
+    "webp-converter": "^2.2.2"
   },
   "scripts": {
-    "start": "nodemon src/server.js",
-    "sass": "node-sass --include-path scss ./src/sass/index.scss public/min-main.css",
+    "start": "NODE_ENV=production node src/server.js",
+    "dev": "NODE_ENV=development npm run move && nodemon src/server.js",
+    "sass": "node-sass --include-path scss ./src/sass/index.scss public/min-main.css compressed",
     "minify-scss": "node-sass --include-path scss src/sass/index.scss public/min-main.css --output-style compressed",
-    "sass-watch": "nodemon -e scss -x npm run sass"
+    "sass-watch": "nodemon -e scss -x npm run sass",
+    "transformImages": "gulp imageTransformation",
+    "move": "gulp move"
   },
   "prettier": {
     "semi": false,

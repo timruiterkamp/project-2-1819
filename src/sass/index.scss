@@ -1,7 +1,7 @@
-@import "homepage.scss";
-
 $white: white;
 $yellow: #fff021;
+
+@import "homepage.scss";
 
 body,
 html {
@@ -13,59 +13,24 @@ html {
   font-weight: 300;
 }
 
-header {
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  position: fixed;
-  background-color: #fff;
-  z-index: 9999;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
-}
-.header-wrapper {
-  display: grid;
-  grid-template-columns: 25% 70% 5%;
-  max-width: 1425px;
-  margin: 0 auto;
-  align-items: center;
-
-  img {
-    height: 26px;
-  }
-
-  nav {
-    justify-self: end;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  li {
-    list-style-type: none;
-    margin: 0 1rem;
-  }
-
-  a {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-
-    &:hover {
-      text-decoration: black;
-    }
-  }
-}
-
 main {
   padding: 28px 0px 0px;
   min-height: 80vh;
+
+  p {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-bottom: 0px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    max-width: 90%;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 700;
+  }
 }
 
 footer {

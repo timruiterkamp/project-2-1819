@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Performance matters!</title>
-  <link rel="stylesheet" href="/min-main.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="preconnect">
+  <link rel="preload" href="/min-main.css" as=style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="preconnect">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{!-- <link rel="manifest" href="/manifest.json">
-  
+  <link rel="manifest" href="/manifest.json">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
@@ -16,7 +16,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- Primary Meta Tags -->
-  <title>Performance matters - Reddit app</title>
+  <title>CMDA</title>
   <meta name="title" content="Performance matters - Reddit app">
   <meta name="description" content="This is a application where the performance of the app is the key focus point.">
 
@@ -36,5 +36,70 @@
   <meta property="twitter:description"
     content="This is a application where the performance of the app is the key focus point.">
   <meta property="twitter:image"
-  content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> --}}
+    content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+  <style>
+    header {
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      position: fixed;
+      background-color: #fff;
+      z-index: 9999;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+      -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+    }
+
+    .introduction {
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 20%;
+      background-color: grey;
+    }
+
+    .header-wrapper {
+      display: grid;
+      grid-template-columns: 25% 70% 5%;
+      max-width: 1425px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .header-wrapper img {
+      height: 26px;
+    }
+
+    .header-wrapper nav {
+      justify-self: end;
+    }
+
+    .header-wrapper ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .header-wrapper li {
+      list-style-type: none;
+      margin: 0 1rem;
+    }
+
+    .header-wrapper a {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .header-wrapper a:hover {
+      text-decoration: black;
+    }
+  </style>
 </head>

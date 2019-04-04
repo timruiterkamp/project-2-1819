@@ -1,4 +1,5 @@
-<section class="introduction" style='background-image: url({{header.image}};'>
+<section class="introduction" style='background-image: -webkit-image-set( url(assets/{{header.image}}) 1x,
+  url(assets/{{header.xlImage}}) 2x );'>
   <div class="textfield">
     <h1>{{header.title}}</h1>
     <p>{{header.subtitle}}</p>
@@ -7,47 +8,52 @@
 
 <section class="design">
   <div class="inner-wrapper">
-    <div>
+    <div class="textfield">
       <h3>{{design.title}}</h3>
       <p>{{design.content}}</p>
-      <button href={{design.button_link}}>{{design.button_text}}</button>
+      <button href={{design.btn_link}}>{{design.btn_text}}</button>
     </div>
-    <img src={{design.image}} alt='Illustratie voor: {{design.title}}'>
+    <img sizes="(min-width: 40em) 80vw, 100vw" srcset="/assets/{{design.image}} 375w,
+          /assets/{{design.lgImage}} 480w,
+        /assets/{{design.xlImage}} 768w" alt='Illustratie voor: {{design.title}}'>
   </div>
 </section>
 
 <section class="studentwork">
   <div class="inner-wrapper">
-
-    <div>
+    <div class="textfield">
       <h3>{{studentwork.title}}</h3>
       <p>{{studentwork.content}}</p>
-      <button href={{studentwork.button_link}}>{{studentwork.button_text}}</button>
+      <button href={{studentwork.btn_link}}>{{studentwork.btn_text}}</button>
     </div>
-    <img src={{studentwork.image}} alt='Illustratie voor: {{studentwork.title}}'>
+    <img sizes="(min-width: 40em) 80vw, 100vw" srcset="/assets/{{studentwork.image}} 375w,
+          /assets/{{studentwork.lgImage}} 480w,
+        /assets/{{studentwork.xlImage}} 768w" alt='Illustratie voor: {{studentwork.title}}'>
   </div>
 </section>
 
 <section class="workingTogether">
   <div class="inner-wrapper">
-
-    <div>
+    <div class="textfield">
       <h3>{{workingTogether.title}}</h3>
       <p>{{workingTogether.content}}</p>
-      <button href={{workingTogether.button_link}}>{{workingTogether.button_text}}</button>
+      <button href={{workingTogether.btn_link}}>{{workingTogether.btn_text}}</button>
     </div>
-    <img src={{workingTogether.image}} alt='Illustratie voor: {{workingTogether.title}}'>
+    <img sizes="(min-width: 40em) 80vw, 100vw" srcset="/assets/{{workingTogether.image}} 375w,
+          /assets/{{workingTogether.lgImage}} 480w,
+        /assets/{{workingTogether.xlImage}} 768w" alt='Illustratie voor: {{workingTogether.title}}'>
   </div>
 </section>
 
 <section class="masterclasses">
   <div class="inner-wrapper">
-
-    <div>
+    <div class="textfield">
       <h3>{{masterclasses.title}}</h3>
       <p>{{masterclasses.content}}</p>
-      <button href={{masterclasses.button_link}}>{{masterclasses.button_text}}</button>
+      <button href={{masterclasses.btn_link}}>{{masterclasses.btn_text}}</button>
     </div>
-    <img src={{masterclasses.image}} alt='Illustratie voor: {{masterclasses.title}}'>
+    <img sizes="(min-width: 40em) 80vw, 100vw" srcset="/assets/{{masterclasses.image}} 375w,
+          /assets/{{masterclasses.lgImage}} 480w,
+        /assets/{{masterclasses.xlImage}} 768w" alt='Illustratie voor: {{masterclasses.title}}'>
   </div>
 </section>
