@@ -43,20 +43,11 @@ app
     }
   })
   .use(bodyParser.json())
-  .use((req, res, next) => {
-    res.setHeader("Cache-Control", "max-age=" + 365 * 24 * 60 * 60);
-    next();
-  })
   .get("/offline", getOffline)
   .get("/", all);
 
-spdy.createServer(options, app).listen(process.env.PORT || 3000, error => {
-  if (error) {
-    console.error(error);
-    return process.exit(1);
-  } else {
-  }
-});
+const server = spdy.createServer(options, app);
+server.listen(process.env.PORT || 3000);
 
 function getOffline(req, res) {
   res.render("offline");
