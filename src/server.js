@@ -15,14 +15,6 @@ const options = {
   cert: fs.readFileSync("./server.crt")
 };
 
-spdy.createServer(options, app).listen(process.env.PORT || 3000, error => {
-  if (error) {
-    console.error(error);
-    return process.exit(1);
-  } else {
-  }
-});
-
 app
   .engine(
     "handlebars",
@@ -57,6 +49,14 @@ app
   })
   .get("/offline", getOffline)
   .get("/", all);
+
+spdy.createServer(options, app).listen(process.env.PORT || 3000, error => {
+  if (error) {
+    console.error(error);
+    return process.exit(1);
+  } else {
+  }
+});
 
 function getOffline(req, res) {
   res.render("offline");
