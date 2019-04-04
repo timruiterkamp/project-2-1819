@@ -35,13 +35,6 @@ app
     res.setHeader("Cache-Control", "max-age=" + 365 * 24 * 60 * 60);
     next();
   })
-  .use((req, res, next) => {
-    if (req.secure) {
-      next();
-    } else {
-      res.redirect("https://" + req.headers.host + req.url);
-    }
-  })
   .use(bodyParser.json())
   .get("/offline", getOffline)
   .get("/", all)
