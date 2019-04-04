@@ -26,8 +26,8 @@
     "webp-converter": "^2.2.2"
   },
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "NODE_ENV=development npm run move && nodemon src/server.js",
+    "start": "node server.js",
+    "dev": "npm run move && nodemon server.js",
     "sass": "node-sass --include-path scss ./src/sass/index.scss public/min-main.css compressed",
     "minify-scss": "node-sass --include-path scss src/sass/index.scss public/min-main.css --output-style compressed",
     "sass-watch": "nodemon -e scss -x npm run sass",

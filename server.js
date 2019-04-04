@@ -2,9 +2,9 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const path = require("path");
-const wpToJson = require("./scripts/wpToJson.js");
-const jsonToMd = require("./scripts/jsonToMd.js");
-const dl = require("./scripts/downloadFiles.js");
+const wpToJson = require("./src/scripts/wpToJson.js");
+const jsonToMd = require("./src/scripts/jsonToMd.js");
+const dl = require("./src/scripts/downloadFiles.js");
 const fs = require("fs");
 const spdy = require("spdy");
 // require("dotenv").config();
@@ -20,12 +20,12 @@ app
     "handlebars",
     exphbs({
       defaultLayout: "main",
-      partialsDir: __dirname + "/views/partials/"
+      partialsDir: __dirname + "/src/views/partials/"
     })
   )
   .set("view engine", "handlebars")
-  .set("views", __dirname + "/views")
-  .use(express.static(path.join(__dirname, "../public")))
+  .set("views", __dirname + "/src/views")
+  .use(express.static(path.join(__dirname, "/public")))
   .use(
     bodyParser.urlencoded({
       extended: true
