@@ -5,6 +5,7 @@ const path = require("path");
 const wpToJson = require("./src/scripts/wpToJson.js");
 const jsonToMd = require("./src/scripts/jsonToMd.js");
 const dl = require("./src/scripts/downloadFiles.js");
+const compression = require("compression");
 const fs = require("fs");
 const spdy = require("spdy");
 // require("dotenv").config();
@@ -35,6 +36,7 @@ app
     res.setHeader("Cache-Control", "max-age=" + 365 * 24 * 60 * 60);
     next();
   })
+  .use(compression())
   .use(bodyParser.json())
   .get("/offline", getOffline)
   .get("/", all)
