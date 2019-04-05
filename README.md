@@ -23,7 +23,7 @@ Enjoy!
 
 ## First impressions
 
-The first thing I did was ran a audit on the website and find out what is wrong with it. I did two test, one with the current internet speed and one with a 3G network.
+The first thing I did was ran an audit on the website and find out what is wrong with it. I did two tests, one with the current internet speed and one with a 3G network.
 
 |         Current network          |      3G network       |
 | :------------------------------: | :-------------------: |
@@ -31,7 +31,7 @@ The first thing I did was ran a audit on the website and find out what is wrong 
 
 As you can see there is some work to do, especially for the 3G network. Those speeds will make a visitor leave the page before seeing any information.
 
-Other usability tests on the homepage:
+Other usability tests and results on the homepage:
 
 - Disabling javascript deletes the complete introduction screen
 - Disabling CSS will also delete the introduction
@@ -48,11 +48,11 @@ Other usability tests on the homepage:
 
 ## Taking the helicopter (insert Joost emoji)
 
-The first thing I noticed was that the client himself defined as a content manager and highlighted that he had not many experience with the web.
+The first thing I noticed was that the client defined himself more as a content manager and highlighted that he had not many experience with the web.
 
-Based on this finding, I took a look at his current workflow. The current workflow consists despite filling content also out of designing elements. This gives him creative freedom, but I am not sure how happy he currently is with this.
+Based on this finding, I took a look at his current workflow. The current workflow consists, despite filling content, also out of designing elements. This gives him creative freedom, but I am not sure how happy he currently is with this.
 
-So I found an alternative, same content management system (wordpress) but with Advanced Custom Fields. This contains of just text fields that he would need to fill in. Cons of this workflow is that he has little influence on the layout of the page.
+So I found an alternative, same content management system (wordpress) but with Advanced Custom Fields. This contains just text fields that he would need to fill in. Cons of this workflow is that he has little influence on the layout of the page.
 
 Illustration of the use of ACF (advanced custom fields):  
 ![](gh-images/acf.png)
@@ -73,7 +73,7 @@ cons:
 
 ## Some logic I wrote to improve speed
 
-The current workflow makes a call at every page that is loaded. This requires a lot of data and that is just unnescessary. So for this reason I created a function that loops over every post, page or other endpoint and create json files with the data that the enpoints contain.
+The current workflow makes a call at every page that is loaded. This requires a lot of data and that is just unnescessary. So for this reason I created a function that loops over every post, page or other endpoint and create json files with the data that the endpoints contain.
 
 This should be an one time trigger that would ideally be connected to the publish function of wordpress. This way the files always stay on the server and there would be no need for any requests to other API's.
 
@@ -144,7 +144,7 @@ const downloadFiles = async function downloadAll(files) {
 };
 ```
 
-Which download all the given url's and converts them to webp formats.
+Which downloads all the given url's and converts them to webp formats.
 After this is complete I have a gulp task which builds every image into different widths:
 
 ```javascript
@@ -205,7 +205,7 @@ To improve the overall accesibility, I implemented alt tags at every image, prov
 
 ## Conclusion
 
-After changing the way content is being added, with bloated HTML and CSS, I hoped to prove the point that with just managing the websites content and leaving the base website setup unharmed, there can be a lot of usability and performance improvements.
+After changing the way content is being added, without bloated HTML and CSS, I hoped to prove the point that with just managing the websites content and leaving the base website setup unharmed, there can be a lot of usability and performance improvements.
 
 To narrow it all down:
 The results for the normal internet speed improved by 3-5 times.
