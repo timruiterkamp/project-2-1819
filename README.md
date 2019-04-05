@@ -216,6 +216,12 @@ But at the 3G speeds I improved the site by around 10 times and almost got the s
 | :-------------------: | :-----------------------------: |
 | ![](gh-images/3g.png) | ![](gh-images/slow-results.png) |
 
+With the control I have over the CSS and HTML there are no validation errors anymore.
+
+- Css: [http://jigsaw.w3.org/css-validator/validator?profile=css3&warning=0&uri=https%3A%2F%2Fcmda-project2.herokuapp.com%2F](http://jigsaw.w3.org/css-validator/validator?profile=css3&warning=0&uri=https%3A%2F%2Fcmda-project2.herokuapp.com%2F)
+- HTML (contains warnings but no errors): [https://validator.w3.org/nu/?doc=https%3A%2F%2Fcmda-project2.herokuapp.com%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcmda-project2.herokuapp.com%2F)
+- Web accessibility: [http://wave.webaim.org/report#/https%3A%2F%2Fcmda-project2.herokuapp.com%2F](http://wave.webaim.org/report#/https%3A%2F%2Fcmda-project2.herokuapp.com%2F)
+
 ## To Do
 
 - [ ] Add same static file support for subpages

@@ -40,6 +40,7 @@ app
   .use(bodyParser.json())
   .get("/offline", getOffline)
   .get("/", all)
+  .get("*", (req, res) => res.render("error"))
   .listen(process.env.PORT || 3000);
 
 //HTTP2 server
@@ -130,7 +131,7 @@ function all(req, res, next) {
       }
     });
   } catch (err) {
-    console.log(err);
+    res.render("error");
     wpToJson.createJsonPages();
   }
 }

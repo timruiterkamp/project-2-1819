@@ -102,7 +102,7 @@ footer .studying {
     justify-content: center;
     padding: 3rem 0;
     align-items: center; }
-  footer .studying button {
+  footer .studying a {
     background: none repeat scroll 0 0 #0a0a0a;
     border: none;
     position: relative;
@@ -141,3 +141,15 @@ footer .copyright {
     footer .copyright .inner li {
       list-style-type: none;
       margin: 0 1rem; }
+
+.offline a {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  text-align: center; }
