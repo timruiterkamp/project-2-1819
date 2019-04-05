@@ -199,6 +199,10 @@ The manifest makes the website downloadable and install it on the users device.
 
 I included HTTP2 but after trying to deploy it for a hour, I read that heroku doesn't support HTTP2 and so I could not deploy it.. The source code is still in the server.js file but it is outcommented for deployment reasons.
 
+## Accesibility
+
+To improve the overall accesibility, I implemented alt tags at every image, provided a better heading tree and showed the outline of the elements you were visiting while tabbing through the website. The website is also offline available and doesn't require much data to use.
+
 ## Conclusion
 
 After changing the way content is being added, with bloated HTML and CSS, I hoped to prove the point that with just managing the websites content and leaving the base website setup unharmed, there can be a lot of usability and performance improvements.
